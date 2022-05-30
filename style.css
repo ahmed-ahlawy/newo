@@ -1,0 +1,353 @@
+* { -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+padding: 0%; margin: 0%;
+scroll-behavior: smooth;
+ }
+
+body {font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth;
+}
+ul {list-style: none;}
+header
+{
+    background-color: rgb(41, 133, 214);
+    width: 100%;
+    position: fixed; /* عشان القائمة تفضل موجودة وانا بروح ف اي مكان وتدي منظر حلو */
+    z-index: 555; /* عشان ثبت القائمة لما انزل تحت ومفيش حاة تغطي عليها */
+    display: flex;
+    justify-content: space-between; /* خلت عناصر شمال ويمين ف اولهم */
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo
+{
+    text-decoration: none;
+    color: rgb(23, 47, 151);
+    font-weight: 800;
+    font-size: 1.4em;
+}
+.navigation a
+{
+text-decoration: none;
+font-size: 1.1em;
+font-weight: 500;
+padding-left: 30px;
+color: rgb(171, 195, 196);
+}
+.navigation a:hover
+{
+    color: sienna;
+}
+
+section
+{
+    padding: 70px 200px; /* نقلت الكلام بعيد عن شاشاة */
+}
+.main
+{
+    width: 100%;
+    min-height: 100vh; /* ال vh يعني منظر الشاشة الي شايفة كلو انا هيغطي علية ... امال min يعني اقل حاجة وينفع يزيد عادي*/
+   display: flex; 
+   align-items: center; /* عشان اجيبهم تحت ف نص */
+   background: url(../new/filee/logo.jpg);
+   background-size: cover;
+   background-position: center; /* عشان توسطن الصورة وتبقي مظبوطة */
+   background-attachment: fixed; /* دي عشان تعمل سكرول للصورة وانت بتنزل وبتدي منظر حلو خالص */
+}
+.main h2
+{
+    color: #F9EBC8;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.main h2 span
+{
+    display: inline-block; /* ادناها الديسبلاي عشان اقدر اعملها مارن او بادينج لانو كان عنصر انلين */
+    color: #446A46;
+    font-size: 2em;
+    margin-top: 15px;
+    font-weight: 700;
+}
+.awy
+{
+    color: rgb(133, 216, 51);
+}
+.main h3
+{
+    color: #B4E197;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-top: 15px;
+    margin-bottom: 18px;
+}
+.main-btn
+{
+    color: white;
+    background-color: rgb(104, 93, 202);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block; /* حطناها عشان نقدر نحط المارجن توب والبادينج ويشتغلو */
+    padding: 0.9375em 2.0875em;
+    letter-spacing: 1.3px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: .4s ease-in-out;
+}
+.main-btn:hover
+{
+    background-color: rgb(46, 27, 216);
+    transform: scale(1.1);
+}
+.social 
+{
+color: #C996CC;
+font-size: 1.8em;
+text-align: center;
+margin-top: 80px;
+
+}
+.social a
+{
+    margin: 0 10px;
+    color: rgb(131, 236, 236);
+}
+.social a:hover
+{
+    color: violet;
+}
+.title
+{
+    display: flex; /* لازم اديها الفليكس عشان احركها */
+    justify-content: center; /* عشان اجيب الكلمة في النص */
+    color: #cde0f0e0;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.title::before
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    width: 130px;
+    border-bottom: 2px solid red;
+    height: 100%;
+}
+.title::after
+{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    width: 10px;
+    border: 2px solid red;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(44, 42, 42);
+}
+.cards
+{
+    background-color: rgb(44, 42, 42);
+}
+.content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* هيخلي التلاتة جمب بعض ولو عاوزهم تحت بعض نغير ال راو ونحط كولم */
+    flex-wrap: wrap;
+    }
+    .card
+    {
+        background-color: rgb(227, 240, 252);
+        width: 21.25em;
+        box-shadow: 0 5px 20px, rgba(240, 200, 200, 0.986);
+        border-radius: 10px;
+        padding: 25px;
+        margin: 15px;
+        transition: .5s ease;
+        border: 1px solid rgb(215, 204, 224);
+        background: linear-gradient(to top, rgb(201, 104, 104) 50%, white 50% ); /* بتخلي اللون ف نص الدايرة عشان نعملها هافر */
+    background-size: 100% 200%;
+    letter-spacing: 2px;
+    }
+    .card:hover
+    {
+        transform: scale(1.1);
+        border: none;
+        box-shadow: 0 0 5px rgb(238, 216, 216);
+        background-position: left bottom;
+    }
+    .icone
+    {
+        font-size: 2.5em;
+        color: royalblue;
+        text-align: center;
+    }
+    .info
+    {
+        text-align: center;
+    }
+    .info h3
+    {
+        color: rgb(18, 131, 18);
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: 25px;
+    }
+    .projects
+    {
+        background-color: rgb(197, 204, 204);
+    }
+    .projects .contentt
+    {
+        margin-top: 40px;
+        display: flex;
+    justify-content: center;
+    flex-direction: row; /* هيخلي التلاتة جمب بعض ولو عاوزهم تحت بعض نغير ال راو ونحط كولم */
+    flex-wrap: wrap;
+    }
+    .titlee 
+    {
+        text-align: center;
+        font-size: 2em;
+        letter-spacing: 3px;
+        font-weight: 900;
+    }
+    .pro-card
+    {
+        background-color: rgb(112, 109, 109);
+        border: 1px solid black;
+        min-height: 14em;
+        width: 22em;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 20px;
+        transition: .3s ease-in;
+    }
+    .pro-card:hover
+    {
+        transform: scale(1.1);
+        border: none;
+    }
+    .pro-image img
+    {
+        width: 100%;
+        
+    }
+    .pro-card:hover .pro-image
+    {
+        opacity: 0.9;
+    }
+    .pro-info
+    {
+        padding: 1em;
+        color: rgb(212, 206, 206);
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .pro-par
+    {
+        font-size: 0.9em;
+    
+    }
+    .pro-title
+    {
+        display: flex;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 15px;
+        color: turquoise;
+        justify-content: center;
+    }
+    .pro-more
+    {
+        text-decoration: none;
+        color: blue;
+    }
+    .pro-more:hover
+    {
+        text-decoration: underline;
+        color: tomato;
+    }
+    .contact .icone
+    {
+        color: sandybrown;
+    }
+    .contact  .info h3
+    {
+        color: darksalmon;
+        letter-spacing: 1px;
+    }
+    .contact .info p
+    {
+        font-size: 1em;
+        color: cadetblue;
+        font-weight: 800;
+    }
+    .footer
+    {
+        background-color: black;
+        color: white;
+        padding: 1.4em;
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer p span
+    {
+        font-size: 1.2em;
+        color: cornflowerblue;
+        letter-spacing: 2px;
+    }
+    .footer p
+    {
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+    .footer h3
+    {
+        color: #446A46;
+        letter-spacing: 2px;
+        font-size: 1.3em;
+        font-weight: 800;
+    }
+    /* start media gury */
+    @media (max-width:1023px) /* يعني عاوزك من صفر لحد الرقم دا تطبقلي علية الي هعملو دا */
+    { header { padding: 12px 20px; display: block;
+
+    }
+    .navigation {
+        padding: 3px ;
+        padding-left: 10px;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    
+    section {
+        padding: 80px 20px;    }
+        .main-btn h2 {
+            font-size: 1em;
+        }
+        .main-btn h3 {
+            font-size: 1.5em;
+        }
+        .main {text-align: center;}
+        .main {background-position: center;}
+        .footer {flex-direction: column;}
+        .footer p {font-size: 0.9em;
+        padding: 8px 0;
+    text-align: center;}
+        .footer h3 {
+            font-size: 1em;
+            padding-top: 5px;
+            text-align: center;
+        }
+    }
