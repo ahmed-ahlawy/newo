@@ -49,7 +49,7 @@ section
     min-height: 100vh; /* ال vh يعني منظر الشاشة الي شايفة كلو انا هيغطي علية ... امال min يعني اقل حاجة وينفع يزيد عادي*/
    display: flex; 
    align-items: center; /* عشان اجيبهم تحت ف نص */
-   background: url(../new/filee/logo.jpg);
+   background: url(filee/logo.jpg);
    background-size: cover;
    background-position: center; /* عشان توسطن الصورة وتبقي مظبوطة */
    background-attachment: fixed; /* دي عشان تعمل سكرول للصورة وانت بتنزل وبتدي منظر حلو خالص */
