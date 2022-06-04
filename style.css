@@ -18,6 +18,7 @@ header
     justify-content: space-between; /* خلت عناصر شمال ويمين ف اولهم */
     align-items: center;
     padding: 10px 200px;
+    scroll-behavior: smooth;
 }
 .logo
 {
@@ -25,6 +26,7 @@ header
     color: rgb(23, 47, 151);
     font-weight: 800;
     font-size: 1.4em;
+    scroll-behavior: smooth;
 }
 .navigation a
 {
@@ -163,6 +165,7 @@ margin-top: 80px;
     justify-content: center;
     flex-direction: row; /* هيخلي التلاتة جمب بعض ولو عاوزهم تحت بعض نغير ال راو ونحط كولم */
     flex-wrap: wrap;
+    scroll-behavior: smooth;
     }
     .card
     {
@@ -213,6 +216,7 @@ margin-top: 80px;
     justify-content: center;
     flex-direction: row; /* هيخلي التلاتة جمب بعض ولو عاوزهم تحت بعض نغير ال راو ونحط كولم */
     flex-wrap: wrap;
+        scroll-behavior: smooth;
     }
     .titlee 
     {
